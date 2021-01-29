@@ -1,0 +1,30 @@
+@import "variables.scss";
+
+.tradeFeed {
+  margin-top: 3em;
+
+  .title {
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 1em;
+
+    span {
+      color: #556cf5;
+      position: relative;
+      padding-right: 0.5em;
+      margin-right: 0.25em;
+
+      &::after {
+        content: "";
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+        background-color: #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "variables.scss";
+
+.ideaStats {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5em;
+
+    @media (max-width: 767px) {
+      width: 50%;
+      margin: 2.5em 0 0;
+    }
+
+    .title {
+      text-transform: uppercase;
+      color: $violet-dark;
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+
+    .value {
+      color: #747474;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import "variables.scss";
+
+.tag {
+  display: flex;
+  align-items: center;
+  line-height: 1em;
+  border: none;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+
+  &.small {
+    padding: 0.5em;
+  }
+
+  &.regular {
+    padding: 0.5em 1em;
+    font-size: 1em;
+  }
+
+  &.large {
+    padding: 0.75em 2em;
+  }
+
+  &.main {
+    background-color: $violet;
+    color: $violet-dark;
+  }
+
+  &.success {
+    background-color: $green-light;
+    color: $green;
+  }
+
+  .icon {
+    margin-right: 0.25em;
+
+    img {
+      width: 15px;
+    }
+  }
+}

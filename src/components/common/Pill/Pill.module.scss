@@ -1,0 +1,44 @@
+@import "variables.scss";
+
+.pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1em;
+  border: none;
+  border-radius: 1em;
+  text-transform: uppercase;
+
+  &.small {
+    padding: 0.5em 2em;
+    font-size: 0.75em;
+    font-weight: 500;
+  }
+
+  &.regular {
+    padding: 0.75em 1.25em;
+    font-size: 1.25em;
+  }
+
+  &.large {
+    padding: 0.75em 2em;
+  }
+
+  &.main {
+    background-color: $grey;
+    color: $blue;
+  }
+
+  &.success {
+    background-color: $green-light;
+    color: $green;
+  }
+
+  .icon {
+    margin-right: 0.25em;
+
+    img {
+      width: 15px;
+    }
+  }
+}

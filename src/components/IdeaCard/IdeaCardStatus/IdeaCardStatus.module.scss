@@ -1,0 +1,36 @@
+@import "variables.scss";
+
+.ideaCardStatus {
+  padding-left: 20px;
+  position: relative;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    content: "";
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $green;
+  }
+
+  &.active {
+    color: $green;
+
+    &::before {
+      background-color: $green;
+    }
+  }
+
+  &.alert {
+    color: $red;
+
+    &::before {
+      background-color: $red;
+    }
+  }
+}

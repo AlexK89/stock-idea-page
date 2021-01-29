@@ -1,0 +1,19 @@
+@import "variables.scss";
+
+.ideaSummary {
+  background-color: $violet-light;
+  border-radius: 1em;
+  margin: 0 1em;
+  padding: 1.5em 2em;
+
+  h4 {
+    margin: 0;
+    text-transform: uppercase;
+    color: $blue-dark;
+  }
+
+  p {
+    color: $violet-dark;
+    line-height: 1.75em;
+  }
+}
